@@ -65,7 +65,7 @@ plt.xlabel('x')
 plt.ylabel('y')
 plt.axis('equal')
 plt.grid()
-plt.show()
+# plt.show()
 
 # save to data folder
 output_dir = '../data'
@@ -74,6 +74,11 @@ os.makedirs(output_dir, exist_ok=True)
 np.save(os.path.join(output_dir, "positions.npy"), positions)
 np.save(os.path.join(output_dir, "velocities.npy"), velocities)
 np.save(os.path.join(output_dir, "times.npy"), times)
+print(f'data saved to {output_dir}')
+print(f'{positions}')
 
-
-print(f'Data saved to {output_dir}')
+output_img_dir = "../results"
+os.makedirs(output_img_dir, exist_ok=True)
+output_img = os.path.join(output_img_dir, "trajectory_plt.png")
+plt.savefig(output_img)
+print(f'Plot saved to {output_img_dir}')
