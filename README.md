@@ -9,7 +9,9 @@ This project implements a Neural ODE framework to simulate and learn dynamical s
 - Modular code structure for scalability and reusability.
 
 ## Installation
+## Installation
 1. Clone the repository:
    ```bash
-   git clone https://github.com/rabidlego25/plann-nn.git
-   cd neural-ode-framework
+   git clone https://github.com/rabidlego25/plan-nn.git
+   cd plan-nn
+
