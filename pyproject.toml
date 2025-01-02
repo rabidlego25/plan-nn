@@ -1,0 +1,17 @@
+[tool.poetry]
+name = "plan-nn"
+version = "0.1.0"
+description = "This project implements a Neural ODE framework to simulate and learn dynamical systems, with a specific application to planetary motion. It uses PyTorch and the torchdiffeq library to solve ODEs and train models for trajectory prediction."
+authors = ["rabidlego24"]
+readme = "README.md"
+package-mode = false 
+
+[tool.poetry.dependencies]
+python = "^3.11"
+torch = "^2.5.1"
+numpy = "^2.2.1"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
