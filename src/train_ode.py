@@ -1,7 +1,7 @@
 import torch
 import torch.nn as nn
 from torchdiffeq import odeint
-from nn-ode import ODEFunc
+from nn_ode import ODEFunc
 
 # hyperparameters
 input_dim = 4

@@ -5,7 +5,7 @@ from torchdiffeq import odeint
 class ODEFunc(nn.Module):
 	def __init__(self, input_dim, hidden_dim, output_dim):
 		super(ODEFunc,self).__init__()
-		self.net = nn.sequential(
+		self.net = nn.Sequential(
 			nn.linear(input_dim, hidden_dim),
 			nn.ReLU(),
 			nn.linear(hidden_dim, hidden_dim),
