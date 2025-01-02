@@ -10,6 +10,7 @@ package-mode = false
 python = "^3.11"
 torch = "^2.5.1"
 numpy = "^2.2.1"
+matplotlib = "^3.10.0"
 
 
 [build-system]
