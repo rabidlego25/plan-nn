@@ -75,7 +75,6 @@ np.save(os.path.join(output_dir, "positions.npy"), positions)
 np.save(os.path.join(output_dir, "velocities.npy"), velocities)
 np.save(os.path.join(output_dir, "times.npy"), times)
 print(f'data saved to {output_dir}')
-print(f'{positions}')
 
 output_img_dir = "../results"
 os.makedirs(output_img_dir, exist_ok=True)
