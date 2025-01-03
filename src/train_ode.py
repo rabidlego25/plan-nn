@@ -3,6 +3,10 @@ import torch.nn as nn
 from torchdiffeq import odeint
 from nn_ode import ODEFunc
 
+if torch.cuda.is_available():
+	torch.set_default_device('cuda')
+	print("cuda set to defualt device")
+
 # hyperparameters
 input_dim = 4
 hidden_dim = 32
