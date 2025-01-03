@@ -6,11 +6,11 @@ class ODEFunc(nn.Module):
 	def __init__(self, input_dim, hidden_dim, output_dim):
 		super(ODEFunc,self).__init__()
 		self.net = nn.Sequential(
-			nn.linear(input_dim, hidden_dim),
+			nn.Linear(input_dim, hidden_dim),
 			nn.ReLU(),
-			nn.linear(hidden_dim, hidden_dim),
+			nn.Linear(hidden_dim, hidden_dim),
 			nn.ReLU(),
-			nn.linear(hidden_dim, output_dim)
+			nn.Linear(hidden_dim, output_dim)
 		)
 
 	def forward(self, t, state):
