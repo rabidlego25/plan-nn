@@ -29,4 +29,7 @@ This project implements a Neural ODE framework to simulate and learn dynamical s
 Run the `simulate.py` scipt to simulate planetary motion and save the results
    ```bash
    python3 src/simulate.py
-* Simulation data is saved in the `data/` directory as `.npy` files.
+- *Simulation data is saved in the `data/` directory as `.npy` files.*
+
+### Train the Neural Network
+
