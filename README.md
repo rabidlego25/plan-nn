@@ -14,13 +14,16 @@ This project implements a Neural ODE framework to simulate and learn dynamical s
    ```bash
    git clone https://github.com/rabidlego25/plan-nn.git
    cd plan-nn
+   ```
 2. Set up a Python virtual environment:
    ```bash
    python3 -m venv myenv
    source myenv/bin/activate
+   ```
 3. Install the required dependencies
    ```bash
    pip3 install -r requirements.txt
+   ```
 
 ## Usage
 
@@ -29,7 +32,13 @@ This project implements a Neural ODE framework to simulate and learn dynamical s
 Run the `simulate.py` scipt to simulate planetary motion and save the results
    ```bash
    python3 src/simulate.py
+   ```
 - *Simulation data is saved in the `data/` directory as `.npy` files.*
 
 ### Train the Neural Network
 
+- *Use the `train_ode.py` script to train a Neural ODE model*
+   ```bash
+   python3 src/train_ode.py
+   ```
+- *The trained model is saved as `trained_ode_func.pth`*
