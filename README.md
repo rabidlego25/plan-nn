@@ -9,9 +9,24 @@ This project implements a Neural ODE framework to simulate and learn dynamical s
 - Modular code structure for scalability and reusability.
 
 ## Installation
-## Installation
+
 1. Clone the repository:
    ```bash
    git clone https://github.com/rabidlego25/plan-nn.git
    cd plan-nn
+2. Set up a Python virtual environment:
+   ```bash
+   python3 -m venv myenv
+   source myenv/bin/activate
+3. Install the required dependencies
+   ```bash
+   pip3 install -r requirements.txt
 
+## Usage
+
+### Simulate Planetary Motion
+
+Run the `simulate.py` scipt to simulate planetary motion and save the results
+   ```bash
+   python3 src/simulate.py
+* Simulation data is saved in the `data/` directory as `.npy` files.
