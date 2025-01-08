@@ -93,7 +93,6 @@ output_dir2 = '../data'
 os.makedirs(output_dir2, exist_ok=True)
 np.save(os.path.join(output_dir2, 'positions_normalized.npy'), positions_normalized)
 np.save(os.path.join(output_dir2, 'velocities_normalized.npy'), velocities_normalized)
-np.save(os.path.join(output_dir2, 'times.npy'), times)
-
+np.save(os.path.join(os.path.join(output_dir2, 'times.npy', times))
 
 print(f'Plot saved to {output_img_dir}')
