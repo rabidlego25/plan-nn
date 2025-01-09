@@ -84,7 +84,7 @@ plt.savefig(output_img)
 
 # implementation of data pre-processing
 # normalizing positions and velocities
-scaler = MinMaxScaler
+scaler = MinMaxScaler()
 positions_normalized = scaler.fit_transform(positions)
 velocities_normalized = scaler.fit_transform(velocities)
 
