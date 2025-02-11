@@ -1,1 +1,6 @@
 *.swp
+*.pth
+*.pyc
+*.npy
+*.png
+/venv
