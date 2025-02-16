@@ -8,6 +8,8 @@ This project implements a Neural ODE framework to simulate and learn dynamical s
 - Save and visualize results using Matplotlib.
 - Modular code structure for scalability and reusability.
 
+#### Please note this code requires python be versioned less than 3.11 to comply with the torch ecosystem
+
 ## Installation
 
 1. Clone the repository:
@@ -17,12 +19,12 @@ This project implements a Neural ODE framework to simulate and learn dynamical s
    ```
 2. Set up a Python virtual environment:
    ```bash
-   python3 -m venv myenv
-   source myenv/bin/activate
+   python -m venv ../myenv
+   source ../myenv/bin/activate
    ```
 3. Install the required dependencies
    ```bash
-   pip3 install -r requirements.txt
+   poetry install
    ```
 
 ## Usage
@@ -31,7 +33,7 @@ This project implements a Neural ODE framework to simulate and learn dynamical s
 
 Run the `simulate.py` scipt to simulate planetary motion and save the results
    ```bash
-   python3 src/simulate.py
+   python src/simulate.py
    ```
 - *Simulation data is saved in the `data/` directory as `.npy` files.*
 
@@ -39,6 +41,8 @@ Run the `simulate.py` scipt to simulate planetary motion and save the results
 
 - *Use the `train_ode.py` script to train a Neural ODE model*
    ```bash
-   python3 src/train_ode.py
+   python src/train_ode.py
    ```
 - *The trained model is saved as `trained_ode_func.pth`*
+
+##  Model Explanation
