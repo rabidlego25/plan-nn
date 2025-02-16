@@ -14,4 +14,10 @@ This project implements a Neural ODE framework to simulate and learn dynamical s
    ```bash
    git clone https://github.com/rabidlego25/plan-nn.git
    cd plan-nn
+2. Install dependancies
+   ```bash
+   poetry install
 
+3. enable virtual enviorment
+   ```bash
+   poetry env use
