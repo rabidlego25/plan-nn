@@ -47,9 +47,16 @@ Run the `simulate.py` scipt to simulate planetary motion and save the results
 
 ##  Model Explanation
 
-# CLI Package Manager for Sofware add-ons
+### Description of key files in [`src`](src) directory
 
 - [`src/train_ode.py`](src/train_ode.py) &rarr; Trains a neural ODE model using PyTorch and `torchdiffeq` to predict software version compatibility or dependencies.
 - [`src/nn_ode.py`](src/nn_ode.py) &rarr; Defines a neural ODE function using a multi-layer perceptron (MLP) for time-dependent predictions.
 - [`src/simulate.py`](src/simulate.py) &rarr; Implements a physics-based simulation of orbital motion and preprocesses data for analysis.
 - [`src/specs.py`](src/specs.py) &rarr; Gathers system information, including CPU, GPU, and PyTorch details, to optimize software installation.
+
+### Benefit of using .npy files
+
+- `.npy` files are faster compared to text-based formats like CSV.
+- Represents the data in native binary form - avoiding the overhead of formatting and parsing
+- Saving numerical data as text (ie CSV), floating-point values get rounded due to formatting
+- The data type `int32`, `float64`, etc are stored alongside the data preserving data integrity
