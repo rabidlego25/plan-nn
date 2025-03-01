@@ -46,3 +46,10 @@ Run the `simulate.py` scipt to simulate planetary motion and save the results
 - *The trained model is saved as `trained_ode_func.pth`*
 
 ##  Model Explanation
+
+# CLI Package Manager for Sofware add-ons
+
+- [`src/train_ode.py`](src/train_ode.py) &rarr; Trains a neural ODE model using PyTorch and `torchdiffeq` to predict software version compatibility or dependencies.
+- [`src/nn_ode.py`](src/nn_ode.py) – Defines a neural ODE function using a multi-layer perceptron (MLP) for time-dependent predictions.
+- [`src/simulate.py`](src/simulate.py) – Implements a physics-based simulation of orbital motion and preprocesses data for analysis.
+- [`src/specs.py`](src/specs.py) – Gathers system information, including CPU, GPU, and PyTorch details, to optimize software installation.
